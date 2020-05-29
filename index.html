@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sally Student Resume</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  </head>
+  <body>
+    <div id="application-root"></div>
+    
+    <!-- scripts -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+      // Our code will go here
+      function App(props) {
+        return (
+          <div>
+            <header>
+              <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="sally student headshot" />
+              <h1>{props.name}</h1>
+              <address>
+                <a href="mailto:sallystudent@email.com">sallystuedent@email.com</a><br />
+                123.456.7890<br />  
+                123 Sally's Street,<br />
+                City, State 45678
+              </address>
+            </header>
+            <main>
+              <section>
+                <h3>Education</h3>
+                <ul>
+                  <li>
+                    <strong>Name of an Important College</strong>
+                    <p>BFA in something</p>
+                  </li>
+                </ul>
+              </section>
+
+              <section>
+                <h3>Employment History</h3>
+                <ul>
+                  <li><b>Company Name</b><br />
+                    <p><i>job title</i> &emsp; | &emsp; August 2019 - current</p>
+                    <p>He'll want to use your yacht, and I don't want this thing smelling like fish. Say goodbye to these, because it's the last time! But I bought a yearbook ad from you, doesn't that mean anything anymore? No! I was ashamed to be SEEN with you. I like being with you. </p>
+                  </li>
+
+                  <li><b>Company Name</b><br />
+                    <p><i>job title</i> &emsp; | &emsp; December 2018 - July 2019</p>
+                    <p>He'll want to use your yacht, and I don't want this thing smelling like fish. Say goodbye to these, because it's the last time! But I bought a yearbook ad from you, doesn't that mean anything anymore? No! I was ashamed to be SEEN with you. I like being with you. </p>
+                  </li>
+                </ul>
+              </section>
+            </main>
+          </div>
+        );
+      }
+
+      ReactDOM.render(
+        <App name="Sally Student"/>,
+        document.querySelector('#application-root')
+      );
+    </script>
+  </body>
+</html>

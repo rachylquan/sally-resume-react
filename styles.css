@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Courier New, monospace;
+  line-height: 1.5;
+  font-size: 13px;
+  margin: 0;
+}
+
+h1, h2, h3, h4 , h5, h6 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 20px;
+}
+
+img {
+  max-height: 15vh;
+  border-radius: 100%;
+}
+
+header {
+  padding: 50px;
+  text-align: center;
+  border-bottom: 5px solid aquamarine;
+}
+
+section {
+  padding: 40px 50px;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+ list-style: none;
+}
+
+li {
+ margin: 4em 1em;
+}
